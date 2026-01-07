@@ -3,7 +3,8 @@ pipeline {
 
     stages {
         /*
-
+        Comment block
+        */
         stage('Build') {
             agent {
                 docker {
@@ -22,7 +23,7 @@ pipeline {
                 '''
             }
         }
-        */
+
 
         stage('Tests') {
             parallel {
